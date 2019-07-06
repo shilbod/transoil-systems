@@ -1,0 +1,73 @@
+.header
+  padding: 22px 0
+  background-color: $color-back
+.navbar
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+  &-icon, &-logo-img
+    display: block
+  &-icon
+    display: inline-block
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-size: cover
+    &-loc
+      width: 13px
+      height: 20px
+      margin-bottom: 15px
+      background-image: url("../img/icon-loc.png")
+    &-phone
+      width: 19px
+      height: 20px
+      background-image: url("../img/icon-phone.png")
+    &-mail
+      width: 28px
+      height: 20px
+      background-image: url("../img/icon-mail.png")
+  &-menu-icon
+    display: flex
+    align-items: center
+    margin-left: 28px
+    a:first-child
+      margin-right: 200px
+  &-menu-wrap
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-self: stretch
+    margin-left: auto
+    margin-right: 70px
+  &-menu
+    display: flex
+    list-style-type: none
+    align-items: center
+    justify-content: space-between
+    margin: 0
+    padding-left: 0
+    &-item
+      padding-top: 16px
+      padding-bottom: 16px
+      a
+        padding-left: 16px
+        padding-top: 16px
+        padding-bottom: 16px
+        margin: 0 6px
+        border-bottom: 3px $color-back solid
+        +Bold
+        font-size: 14px
+        text-transform: uppercase
+        cursor: pointer
+        transition: $transition-all
+        &:hover
+          border-bottom: 3px $color-element solid
+          color: $color-element
+          transition: $transition-all
+  &-button
+    width: 110px
+    height: 60px
+    font-size: 14px
+    +Bold
+    text-transform: uppercase
+    cursor: pointer

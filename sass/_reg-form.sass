@@ -1,0 +1,67 @@
+.reg
+  margin-top: 80px
+  margin-bottom: 160px
+  &-form-wrap
+    display: flex
+    flex-direction: column
+  &-title
+    +Bold
+    font-size: 16px
+    text-transform: uppercase
+    text-align: center
+  &-line-gray
+    width: 400px
+    height: 2px
+    background-color: #8f8d8d
+    margin: 26px auto
+  &-line-color
+    width: 100px
+    height: 4px
+    background-color: $color-element
+    margin: auto
+    margin-bottom: 46px
+  .field
+    width: 420px
+    height: 46px
+    margin: auto
+    margin-bottom: 24px
+    border-radius: 10px
+    padding-left: 18px
+    +Medium
+    font-size: 14px
+    text-transform: uppercase
+    &::placeholder
+      color: lighten($color-back,20%)
+  .circle-icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 50px
+    height: 50px
+    border-radius: 25px
+    border: 2px darken(#ffffff,30%) solid
+    margin: 63px auto
+  .icon-arrow
+    display: inline-block
+    width: 11px
+    height: 12px
+    background-image: url("../img/icon-arrow.png")
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-size: cover
+  &-form-button 
+    width: 420px
+    height: 110px
+    +Bold
+    font-size: 24px
+    text-transform: uppercase
+    text-align: center
+    border-radius: 10px
+    margin: auto
+    margin-bottom: 64px
+  &-form-subtitle
+    width: 420px
+    +Medium
+    font-size: 18px
+    text-align: center
+    margin: auto

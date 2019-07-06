@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EAGH,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CACV",
+    "sources": [
+        "../sass/form-reg.sass"
+    ],
+    "names": [],
+    "file": "form-reg.css"
+}
