@@ -426,14 +426,6 @@ button {
   transition: all 0.3s ease;
 }
 
-@media (max-width: 575px) {
-  .button {
-    padding: 0 30px;
-    font-size: 16px;
-    height: 52px;
-  }
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -722,6 +714,9 @@ button {
 }
 
 @media (max-width: 1199px) {
+  .navbar-login {
+    margin-bottom: 15px;
+  }
   .navbar-icon-loc {
     margin-right: 300px;
   }
@@ -733,6 +728,10 @@ button {
 @media (max-width: 991px) {
   .header {
     padding: 15px 0;
+  }
+  .navbar-login {
+    margin: auto;
+    margin-bottom: 30px;
   }
   .navbar-logo-img {
     width: 90%;
@@ -1829,5 +1828,72 @@ button {
   font-size: 48px;
   color: #fcac45;
   text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  .login-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 94px;
+  }
+  .login-data {
+    margin-left: 15px;
+  }
+  .login-form .field {
+    width: 340px;
+  }
+  .login-form .field-name {
+    width: 340px;
+  }
+  .card-wrap {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .login {
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+  .login-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 80px;
+  }
+  .login-data {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+  .login-form .field {
+    width: 100%;
+  }
+  .login-form .field-name {
+    width: 100%;
+  }
+  .card-wrap {
+    width: 100%;
+    height: 180px;
+    margin-right: 0;
+  }
+  .account {
+    width: 100%;
+  }
+  .account-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .discount-wrap {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
