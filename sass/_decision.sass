@@ -1,0 +1,44 @@
+.decision
+  background-color: #ffffff
+  padding-top: 0
+  .reg-line-color
+    margin-top: 26px
+    margin-bottom: 13px
+    &-lighten
+      width: 70px
+      height: 4px
+      background-color: lighten(#fcac45,10%)
+      margin: auto
+      margin-bottom: 80px
+  &-wrap
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+  &-item
+    width: 28%
+    display: flex
+    flex-direction: column
+    align-items: center
+    &:nth-child(1), &:nth-child(2), &:nth-child(3)
+      margin-bottom: 30px
+    &-title
+      width: 178px
+      +Medium
+      font-size: 18px
+      text-transform: uppercase
+      text-align: center
+      line-height: 1.3
+      color: $color-back
+  &-icon
+    display: flex
+    justify-content: center
+    width: 178px
+    height: 178px
+    border: 5px $color-element solid
+    border-radius: 100px
+    margin-bottom: 35px
+    &-img
+      display: block
+      object-fit: contain
+  

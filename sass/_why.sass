@@ -1,0 +1,35 @@
+.why
+  background-color: #ffffff
+  padding-top: 0
+  .reg-line-color
+    margin-top: 26px
+    margin-bottom: 13px
+    &-lighten
+      width: 70px
+      height: 4px
+      background-color: lighten(#fcac45,10%)
+      margin: auto
+      margin-bottom: 50px
+  &-wrap
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+  &-item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 230px
+    height: 130px
+    background-color: #d7d8d8
+  &-title
+    +Bold
+    font-size: 40px
+    text-transform: uppercase
+    text-align: center
+    color: $color-back
+  &-subtitle
+    +Medium
+    font-size: 16px
+    text-transform: uppercase
+    text-align: center
+    color: $color-back

@@ -1,0 +1,21 @@
+.section-title
+  +Bold
+  font-size: 32px
+  text-transform: uppercase
+  text-align: center
+  color: $color-back
+.partners
+  background-color: #ffffff
+  &-wrap
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+  &-item
+    display: flex
+    &:nth-child(1), &:nth-child(2), &:nth-child(3),&:nth-child(4)
+      margin-bottom: 40px
+  &-img
+    display: block
+    width: 240px
+    height: 140px
+    object-fit: contain

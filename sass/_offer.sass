@@ -1,0 +1,54 @@
+.offer
+  padding-top: 55px
+  .circle-icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 50px
+    height: 50px
+    border-radius: 25px
+    border: 2px darken(#ffffff,30%) solid
+    margin: auto
+    margin-bottom: 60px
+  .icon-arrow
+    display: inline-block
+    width: 11px
+    height: 12px
+    background-image: url("../img/icon-arrow.png")
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-size: cover
+  &-wrap
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+  &-item
+    width: 31%
+    display: flex
+    align-items: flex-end
+    &:nth-child(1), &:nth-child(2), &:nth-child(3)
+      margin-bottom: 120px
+  &-icon
+    display: block
+    width: 125px
+    height: 125px
+    border-radius: 70px
+    object-fit: contain
+    background-color: #eeeef0
+    margin-right: 18px
+  &-title
+    +Bold
+    font-size: 22px
+    text-transform: uppercase
+    color: $color-element
+    &-line
+      width: 80px
+      height: 2px
+      background-color: #8f8d8d
+      margin-top: 8px
+      margin-bottom: 12px
+  &-subtitle
+    +Medium
+    font-size: 12px
+    line-height: 1.2
+
