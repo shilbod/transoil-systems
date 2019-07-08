@@ -1785,8 +1785,8 @@ button {
 }
 
 .reg {
-  margin-top: 80px;
-  margin-bottom: 160px;
+  padding-top: 80px;
+  padding-bottom: 160px;
 }
 
 .reg-form-wrap {
@@ -1924,8 +1924,8 @@ button {
 }
 
 .login {
-  margin-top: 80px;
-  margin-bottom: 160px;
+  padding-top: 80px;
+  padding-bottom: 160px;
 }
 
 .login-card {
@@ -2174,8 +2174,8 @@ button {
 
 @media (max-width: 767px) {
   .login {
-    margin-top: 40px;
-    margin-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 80px;
   }
   .login-card {
     -webkit-box-orient: vertical;
