@@ -53,3 +53,44 @@
       padding-left: 10px
       background-color: $color-element
       color: $color-back
+  
+@media (max-width: 1199px)
+  .about
+    &-progress
+      margin-right: 60px
+
+@media (max-width: 991px)
+  .about
+    &-wrap
+      align-items: center
+      flex-direction: column
+    &-progress
+      margin-right: 0
+      margin-bottom: 25px
+    &-progress-title
+      text-align: center
+    &-text
+      width: 100%
+    .progress
+      &-wrap
+        width: 500px
+      &-item
+        padding-left: 20px
+
+@media (max-width: 767px)
+  .about
+    .reg-line-color
+      margin-top: 16px
+      &-lighten
+        margin-bottom: 46px
+    &-progress
+      margin-right: 0
+    &-progress-title
+      font-size: 20px
+    &-text
+      width: 100%
+      font-size: 16px
+    .progress
+      &-wrap
+        width: 100%
+        margin-bottom: 20px

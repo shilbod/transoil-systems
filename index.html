@@ -22,23 +22,38 @@
         <div class="navbar-logo-wrap">
           <a href="#"><img class="navbar-logo-img" src="img/logo.png" alt="TRANSOIL SYSTEMS"></a>
         </div>
-        <ul class="navbar-menu">
-          <li class="navbar-menu-item">
-            <a href="#">О нас</a>
-          </li>
-          <li class="navbar-menu-item">
-            <a href="#">Наши проекты</a>
-          </li>
-          <li class="navbar-menu-item">
-            <a href="#">Новости компании</a>
-          </li>
-          <li class="navbar-menu-item">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <button class="button navbar-button">Войти</button>
-      </div>
-      <!-- /.navbar-wrap -->
+        <div class="navbar-menu-wrap" >
+            <button class="button navbar-button">Войти</button>
+            <ul class="navbar-menu">
+              <li class="navbar-menu-item">
+                <a href="#">О нас</a>
+              </li>
+              <li class="navbar-menu-item">
+                <a href="#">Наши проекты</a>
+              </li>
+              <li class="navbar-menu-item">
+                <a href="#">Новости компании</a>
+              </li>
+              <li class="navbar-menu-item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-menu-button">
+            <div class="plate plate1" onclick="this.classList.toggle('active')">
+              <svg class="burger" version="1.1" viewBox="0 0 100 100">
+                  <path class="line line1" d="M 30,65 H 70"></path>
+                  <path class="line line2" d="M 70,50 H 30 C 30,50 18.644068,50.320751 18.644068,36.016949 C 18.644068,21.712696 24.988973,6.5812347 38.79661,11.016949 C 52.604247,15.452663 46.423729,62.711864 46.423729,62.711864 L 50.423729,49.152542 L 50.423729,16.101695"></path>
+                  <path class="line line3" d="M 30,35 H 70 C 70,35 80.084746,36.737688 80.084746,25.423729 C 80.084746,19.599612 75.882239,9.3123528 64.711864,13.559322 C 53.541489,17.806291 54.423729,62.711864 54.423729,62.711864 L 50.423729,49.152542 V 16.101695"></path>
+              </svg>
+              <svg class="x" version="1.1" viewBox="0 0 100 100">
+                  <path class="line" d="M 34,32 L 66,68"></path>
+                  <path class="line" d="M 66,32 L 34,68"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- /.navbar-wrap -->
     </div>
     <!-- /.container -->
   </div>
@@ -47,6 +62,7 @@
     <div class="circle-icon"><div class="icon-arrow"></div></div>
     <div class="container"></div>
   </section>
+  
   <section class="section partners">
     <div class="container">
       <div class="section-title">Наши партнеры</div>
@@ -91,7 +107,7 @@
         <div class="offer-item">
           <img src="https://brandmark.io/logo-rank/random/pepsi.png" alt="" class="offer-icon">
           <div class="offer-title-wrap">
-            <div class="offer-title">Сеть<br>АЗС</div>
+            <div class="offer-title">Сеть АЗС</div>
             <div class="offer-title-line"></div>
             <div class="offer-subtitle">Сеть АЗС "TRANS OIL SYSTEMS" насчитывает более 5000 заправочных станций в 8 странах</div>
           </div>
@@ -251,7 +267,7 @@
 
   <section class="section news">
       <div class="container">
-        <div class="section-title">Наши партнеры</div>
+        <div class="section-title">Новости компании</div>
         <div class="reg-line-color"></div>
         <div class="reg-line-color-lighten"></div>
         <div class="news-wrap">
@@ -288,7 +304,7 @@
 
   <section class="section why">
     <div class="container">
-      <div class="section-title">Наши партнеры</div>
+      <div class="section-title">Почему выбирают именно нас?</div>
       <div class="reg-line-color"></div>
       <div class="reg-line-color-lighten"></div>
       <div class="news-wrap">
@@ -346,6 +362,7 @@
 		    autoplaySpeed: 6000,
         slidesToShow: 3,
         slidesToScroll: 1,
+        speed: 300,
         arrows: true,
         dots: false,
         centerMode: true,
@@ -374,6 +391,28 @@
         $(this).hide();
             });
           });
+  </script>
+
+  <script>
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      $('.partners-wrap').slick({
+        autoplay: true,
+		    autoplaySpeed: 5000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+        dots: false,
+        touchMove: true,
+        lazyLoad: true,
+      });
+    } 
+  </script>
+
+  <script>
+    $('.navbar-menu-button').on('click', function(){
+      $('.navbar-menu-wrap').slideToggle(100);
+    }); 
   </script>
 
 </body>

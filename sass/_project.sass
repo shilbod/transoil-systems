@@ -29,3 +29,45 @@
     bottom: 0
     z-index: 10
     transform: translateY(-50%)
+
+@media (max-width: 1199px)
+  .project
+    &-wrap
+      margin: 0
+    .slider-arrow
+      .arrow-left
+        margin-left: 25px
+      .arrow-right
+        margin-right: 25px
+
+@media (max-width: 991px)
+  .project
+    &-item
+      &-img
+        width: 340px
+        height: 340px
+
+@media (max-width: 767px)
+  .slick-active.slick-center
+    .project-item-img
+      transform: scale(1)
+      transition: $transition-all
+  .slick-slide
+    .project-item-img
+      transform: scale(0.9)
+      transition: $transition-all
+
+  .project
+    .section-title
+      margin-bottom: 46px
+    &-wrap
+      margin: 0
+    .slider-arrow
+      .arrow-left
+        margin-left: 15px
+        img
+          width: 80%
+      .arrow-right
+        margin-right: 15px
+        img
+          width: 80%

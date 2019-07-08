@@ -52,3 +52,37 @@
     font-size: 12px
     line-height: 1.2
 
+@media (max-width: 1199px)
+  .offer
+    &-item
+      width: 30%
+    &-icon
+      width: 115px
+      height: 115px
+    &-title
+      font-size: 20px
+
+@media (max-width: 991px)
+  .offer
+    &-item
+      width: 45%
+      &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+        margin-bottom: 60px
+    &-icon
+      width: 110px
+      height: 110px
+
+@media (max-width: 767px)
+  .offer
+    &-item
+      width: 100%
+      margin-bottom: 40px
+      &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+        margin-bottom: 40px
+      &:last-child
+        margin-bottom: 0
+    &-icon
+      width: 100px
+      height: 100px
+    &-title
+      font-size: 18px
