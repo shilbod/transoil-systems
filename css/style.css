@@ -723,7 +723,7 @@ button {
 }
 
 @media (max-width: 991px) {
-  .header {
+  .header, .header-main {
     padding: 15px 0;
   }
   .navbar-login {
