@@ -1,7 +1,7 @@
 .hero
   position: relative
   height: 790px
-  // background-image: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg")
+  // background-image: url("../img/bg-hero.png")
   background-color: $color-back
   background-repeat: no-repeat
   background-position: 50% 50%
@@ -27,7 +27,81 @@
     background-repeat: no-repeat
     background-position: 50% 50%
     background-size: cover
+  .bg-hero
+    margin-top: 140px
+    margin-left: auto
+    margin-right: auto
+  .arrow-hero
+    position: absolute
+    bottom: 0
+    right: 50px
+  .button-hero
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    padding: 20px 0
+    position: absolute
+    width: 65px
+    height: 230px
+    background-color: $color-element
+    border-radius: 35px
+    top: 230px
+    right: 30px
+    transition: $transition-all
+    &:hover
+      box-shadow: 13px 13px 25px 0px rgba(256,256,256,0.3)
+      transition: $transition-all
+    img
+      width: 40px
+
+@media (max-width: 1199px)
+  .hero
+    .bg-hero
+      width: 80%
+      margin-top: 180px
+      margin-left: 60px
+    .arrow-hero
+      bottom: -30px
+
+@media (max-width: 991px)
+  .hero
+    height: 660px
+    .bg-hero
+      width: 80%
+      margin-top: 150px
+      margin-left: 60px
+    .arrow-hero
+      width: 35%
+      right: 35px
+      bottom: -60px
+    .button-hero
+      width: 55px
+      top: 160px
+      right: 15px
 
 @media (max-width: 767px)
   .hero
-    height: 600px
+    height: 550px
+    .bg-hero
+      width: 100%
+      margin-top: 130px
+      margin-left: 0px
+    .arrow-hero
+      display: none
+      width: 35%
+      right: 35px
+      bottom: -60px
+    .button-hero
+      position: static
+      width: 230px
+      height: 50px
+      flex-direction: row
+      align-items: center
+      padding: 0 15px
+      margin: 0 auto
+      margin-top: 40px
+      img
+        width: 30px
+        &:nth-child(1)
+          transform: rotate(-90deg)

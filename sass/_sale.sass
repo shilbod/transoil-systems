@@ -1,0 +1,74 @@
+.sale
+  background-color: #ffffff
+  .reg-line-color
+    margin-top: 26px
+    margin-bottom: 13px
+    &-lighten
+      width: 70px
+      height: 4px
+      background-color: lighten(#fcac45,10%)
+      margin: auto
+      margin-bottom: 80px
+  &-wrap
+    display: flex
+    // align-items: center
+    justify-content: flex-end
+    flex-direction: column
+    color: $color-back
+    margin-right: 380px
+  &-item
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    margin-bottom: 20px
+  &-point
+    width: 7px
+    height: 7px
+    border-radius: 10px
+    margin-right: 25px
+    margin-left: 25px
+    background-color: $color-element
+  &-title, &-percent
+    +Bold
+    font-size: 32px
+    text-transform: uppercase
+    text-align: right
+  &-percent
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 90px
+    height: 90px
+    border: 5px $color-element solid
+    border-radius: 50px
+
+@media (max-width: 1199px)
+  .sale
+    &-wrap
+      margin-right: 300px
+
+@media (max-width: 991px)
+  .sale
+    &-wrap
+      margin-right: 200px
+    &-title, &-percent
+      +Bold
+      font-size: 26px
+      text-transform: uppercase
+      text-align: right
+    &-percent
+      width: 80px
+      height: 80px
+
+@media (max-width: 767px)
+  .sale
+    &-wrap
+      margin-right: 20px
+    &-title, &-percent
+      +Bold
+      font-size: 24px
+      text-transform: uppercase
+      text-align: right
+    &-percent
+      width: 70px
+      height: 70px

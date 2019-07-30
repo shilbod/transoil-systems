@@ -1,29 +1,49 @@
 .slick-active.slick-center
-  .project-item-img
+  .project-item-wrap
     transform: scale(1)
     transition: $transition-all
 .slick-slide
-  .project-item-img
+  .project-item-wrap
     transform: scale(0.8)
     transition: $transition-all
 
 .project
+  .reg-line-color
+    margin-top: 26px
+    margin-bottom: 13px
+    &-lighten
+      width: 70px
+      height: 4px
+      background-color: lighten(#fcac45,10%)
+      margin: auto
+      margin-bottom: 80px
+  &-title
+    +Bold
+    font-size: 38px
+    text-transform: uppercase
+    text-align: center
+    color: $color-back
+    margin-bottom: 40px
+  &-subtitle
+    +Medium
+    font-size: 18px
+    text-transform: uppercase
+    text-align: center
+    color: $color-back
   .section-title
     color: $color-element
-    margin-bottom: 80px
-  &-wrap
-    margin: 0 50px
   &-item
-    &-img
+    &-wrap
       width: 390px
       height: 390px
-      object-fit: cover
+      background-color: $color-element
+      padding: 100px 50px
   .slider-arrow
     position: absolute
     display: flex
     justify-content: space-between
     width: 100%
-    top: 60%
+    top: 62%
     align-items: center
     right: 0
     bottom: 0
@@ -34,6 +54,12 @@
   .project
     &-wrap
       margin: 0
+    &-item
+      &-wrap
+        width: 350px
+        height: 350px
+        background-color: $color-element
+        padding: 80px 30px
     .slider-arrow
       .arrow-left
         margin-left: 25px
@@ -43,6 +69,8 @@
 @media (max-width: 991px)
   .project
     &-item
+      margin-left: 200px
+      margin-right: 200px
       &-img
         width: 340px
         height: 340px
@@ -63,6 +91,7 @@
     &-wrap
       margin: 0
     .slider-arrow
+      top: 68%
       .arrow-left
         margin-left: 15px
         img

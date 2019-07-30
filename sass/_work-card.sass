@@ -1,0 +1,80 @@
+.work-card
+  .section-title
+    color: $color-element
+  &-item
+    display: flex
+    align-items: center
+    margin-bottom: 60px
+    margin-left: 250px
+    &:nth-child(6)
+      margin-bottom: 120px
+  &-icon
+    width: 80px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 30px
+    img
+      height: 70px
+  &-wrap
+    display: flex
+    flex-direction: column
+  &-title
+    +Bold
+    font-size: 30px
+    text-transform: uppercase
+    color: $color-element
+    margin-bottom: 10px
+  &-subtitle
+    width: 500px
+    +Bold
+    font-size: 24px
+    text-transform: uppercase
+
+
+@media (max-width: 1199px)
+  .work-card
+    &-item
+      margin-left: 200px
+
+@media (max-width: 991px)
+  .work-card
+    &-item
+      margin-left: 120px
+    &-icon
+      width: 70px
+      img
+        height: 60px
+    &-title
+      +Bold
+      font-size: 26px
+      text-transform: uppercase
+      color: $color-element
+      margin-bottom: 10px
+    &-subtitle
+      width: 430px
+      +Bold
+      font-size: 20px
+      text-transform: uppercase
+
+@media (max-width: 767px)
+  .work-card
+    &-item
+      margin-left: 0px
+      &:nth-child(6)
+        margin-bottom: 60px
+    &-icon
+      width: 70px
+      img
+        height: 60px
+    &-title
+      +Bold
+      font-size: 24px
+      text-transform: uppercase
+      color: $color-element
+      margin-bottom: 10px
+    &-subtitle
+      width: 100%
+      +Bold
+      font-size: 18px
+      text-transform: uppercase
