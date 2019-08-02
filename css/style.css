@@ -1598,6 +1598,15 @@ button {
      object-fit: contain;
   background-color: #eeeef0;
   margin-right: 18px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.offer-icon:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .offer-title {
