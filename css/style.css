@@ -464,6 +464,10 @@ button {
   }
 }
 
+body.compensate-for-scrollbar {
+  margin-right: 0px !important;
+}
+
 .fancybox-is-open .fancybox-bg {
   opacity: .7 !important;
 }
