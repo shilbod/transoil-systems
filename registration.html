@@ -7,6 +7,7 @@
   <meta name="msapplication-TileColor" content="#211918">
   <meta name="theme-color" content="#211918">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
   <title>TRANSOIL SYSTEMS</title>
 </head>
@@ -23,7 +24,7 @@
           <a href="#"><img class="navbar-logo-img" src="img/logo.png" alt="TRANSOIL SYSTEMS"></a>
         </div>
         <div class="navbar-menu-wrap" >
-          <button class="button navbar-button">Войти</button>
+          <button class="button navbar-button" data-fancybox data-src="#popup" href="javascript:;">Войти</button>
           <ul class="navbar-menu">
             <li class="navbar-menu-item">
               <a href="#">О нас</a>
@@ -84,8 +85,21 @@
   </section>
   <!-- /.form-registration -->
 
+   <!-- popup -->
+
+   <div id="popup" class="popup-main" style="display: none">
+    <form action="" class="popup-form">
+      <div class="popup-title">Вход в личный кабинет</div>
+      <div class="reg-line-color"></div>
+      <input class="popup-field" data-name="login" type="text" name="login" maxlength="256" placeholder="Логин" required>
+      <input class="popup-field" data-name="password" type="password" name="password" maxlength="256" placeholder="Пароль" required>
+      <button class="popup-button" type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+
    <script src="js/jquery-3.3.1.min.js"></script>
    <script src="js/jquery.mask.min.js"></script>
+   <script src="js/jquery.fancybox.min.js"></script>
 
    <script>
       $(document).ready(function() {

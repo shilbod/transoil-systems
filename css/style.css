@@ -464,6 +464,91 @@ button {
   }
 }
 
+.fancybox-is-open .fancybox-bg {
+  opacity: .7 !important;
+}
+
+.popup-main.fancybox-content {
+  background-color: #211918;
+  width: 650px;
+}
+
+.popup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup-field {
+  background-color: #fff;
+  width: 420px;
+  height: 48px;
+  padding-left: 20px;
+  border-radius: 10px;
+  font-family: 'MullerMedium', sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.popup-title {
+  width: 420px;
+  font-family: 'MullerBold', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 2px #8f8d8d solid;
+}
+
+.popup-button {
+  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 14px;
+  color: #fcac45;
+}
+
+@media (max-width: 767px) {
+  .popup-main.fancybox-content {
+    background-color: #211918;
+    width: 95%;
+    padding: 44px 0px !important;
+  }
+  .popup-main.fancybox-content .reg-line-color {
+    margin-bottom: 36px;
+  }
+  .popup-field {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .popup-title {
+    width: 95%;
+    font-family: 'MullerBold', sans-serif;
+    font-size: 16px;
+  }
+}
+
+@media (max-height: 576px) {
+  .fancybox-slide {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .fancybox-slide--html {
+    padding: 0px !important;
+  }
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
